@@ -8,10 +8,10 @@
 		<version>2.7.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.mongodb</groupId>
-	<artifactId>Mongodb</artifactId>
+	<groupId>com.demo</groupId>
+	<artifactId>springmongo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>mongodb.curdopration.com</name>
+	<name>springmongo</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
@@ -24,6 +24,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web-services</artifactId>
 		</dependency>
 
 		<dependency>
@@ -38,6 +42,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+					<configuration>
+				<finaName>mycartmongo</finaName>
+			   <skipTests>true</skipTests>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
